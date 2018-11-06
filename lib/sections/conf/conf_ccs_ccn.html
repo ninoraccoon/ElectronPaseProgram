@@ -1,0 +1,64 @@
+<template class="task-template">
+  <section id="conf_ccs_ccn-section" class="section js-section u-category-windows">
+    <header class="section-header">
+      <div class="section-wrapper">
+        <h1>
+          <svg class="section-icon"><use xlink:href="assets/img/icons.svg#icon-windows"></use></svg>
+          Configuración del Centro de Costo/Centro Contable
+        </h1>
+        <h3>The <code>BrowserWindow</code> module in Electron allows you to create a new browser window or manage an existing one.</h3>
+
+        <p>Each browser window is a separate process, known as the renderer process. This process, like the main process that controls the life cycle of the app, has full access to the Node.js APIs.
+
+        <p>Open the <a href="http://electron.atom.io/docs/api/browser-window">full API documentation<span class="u-visible-to-screen-reader">(opens in new window)</span></a> in your browser.</p>
+      </div>
+    </header>
+
+    <div class="demo">
+      <div class="container">
+        <div class="box box-danger">
+            <div class="box-header">
+                <h3 class="box-title">Seleccione la BD correspondiente al Centro de Costo y Centro Contable</h3>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                  <div class="col-sm-3 offset-1">
+                    <div class="form-group">
+                      <label>Centro de Costo</label>
+                      <select class="form-control select2 ccosto-db"  style="width: 100%;">                          
+                      </select>
+                    </div><!-- /.form-group -->
+                  </div>
+                  <div class="col-sm-3 offset-1">
+                    <div class="form-group">
+                      <label>Centro Contable</label>
+                      <select class="form-control select2 ccont-db" style="width: 100%;">                          
+                      </select>
+                    </div><!-- /.form-group -->
+                  </div>
+                     
+                </div>
+              </div>
+             </div>
+         </div>
+      </div>
+    </div>
+    <footer>
+        <div class="row">
+          <div class="col-sm-2 offset-1">
+                <button class="demo-button control-btn" id="back-step2" data-step="1">Atras</button>  
+          </div>        
+          <div class="col-sm-2 offset-5">
+            <button class="demo-button control-btn" id="next-step2" data-step="3">Siguiente</button>  
+          </div>        
+        </div>
+    </footer>
+    <script type="text/javascript">
+      // require('./renderer-process/windows/create-window')
+      // require('./renderer-process/windows/manage-window')
+      // require('./renderer-process/windows/using-window-events')
+      // require('./renderer-process/windows/frameless-window')
+    </script>
+
+  </section>
+</template>

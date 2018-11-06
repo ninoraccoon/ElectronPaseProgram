@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="../node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script> 
+ 
+  
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/nativize.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/section.css">
+  <link rel="stylesheet" href="assets/css/demo.css">
+  <link rel="stylesheet" href="assets/css/github.css">
+
+
+
+  <link rel="import" href="sections/conf/conf_sql.html">
+  <link rel="import" href="sections/conf/conf_ccs_ccn.html">
+  <link rel="import" href="sections/ejec/resumen.html">
+  <link rel="import" href="sections/ejec/ejec.html">
+  <link rel="import" href="sections/noti/resultado.html">
+  <link rel="import" href="sections/about.html">
+  
+  
+</head>
+<body>
+
+  <nav class="nav js-nav">
+    <header class="nav-header">
+      <h1 class="nav-title">BPA <strong>Pase CCost-CCont</strong></h1>
+      <!-- <svg class="nav-header-icon"><use xlink:href="assets/img/icons.svg#icon-electron"></use></svg> -->
+    </header>
+
+    <div class="nav-item u-category-windows">
+      <h5 class="nav-category">
+        <svg class="nav-icon"><use xlink:href="assets/img/icons.svg#icon-windows"></use></svg>
+        Configuración
+      </h5>
+      <button type="button" id="button-conf_sql" data-section="conf_sql" data-step="1" class="nav-button step-nav step-1">Configuración <em>Servidor SQL</em></button>
+      <button type="button" id="button-conf_ccs_ccn" data-section="conf_ccs_ccn" data-step="2" class="nav-button step-nav step-2">Configuración <em>Centro de Costo/Centro Contable</em></button>
+    </div>
+
+    <div class="nav-item u-category-menu">
+      <h5 class="nav-category">
+        <svg class="nav-icon"><use xlink:href="assets/img/icons.svg#icon-menu"></use></svg>
+        Ejecución
+      </h5>
+      <button type="button" id="button-menus" data-section="resumen" data-step="3" class="nav-button step-nav step-3">Resumen <em>Opciones</em> </button>
+      <button type="button" id="button-shortcuts" data-section="ejec" data-step="4" class="nav-button step-nav step-4">Ejecución de <em>Procesos</em></button>
+    </div>    
+
+    <div class="nav-item u-category-communication">
+      <h5 class="nav-category">
+        <svg class="nav-icon"><use xlink:href="assets/img/icons.svg#icon-communication"></use></svg>
+        Notificaciones
+      </h5>
+      <button type="button" id="button-resultado" data-section="resultado" data-step="5" class="nav-button step-nav step-5">Resumen  <em>Resultado</em></button>
+    </div>   
+
+    <footer class="nav-footer footer">
+      <button type="button" id="button-about" data-modal="about" class="nav-footer-button">Sobre la App</button>      
+    </footer>
+  </nav>
+
+  <main class="content js-content"></main>
+
+  <script>
+    require('./assets/imports')
+    require('./assets/ex-links')
+    require('./assets/nav')    
+    require('./navigation')   
+    require('./assets/demo-btns')
+    require('./assets/code-blocks')
+    require('./assets/normalize-shortcuts') 
+  </script>  
+</body>
+</html>

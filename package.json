@@ -1,0 +1,30 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "lib/main",
+  "types": "lib/main",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./lib/main.js"
+  },
+  "author": "nino",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "electron": "^3.0.6",
+    "electron-settings": "^3.2.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "mssql": "^4.2.2",
+    "typescript": "^3.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.1",
+    "electron-package": "^0.1.0",
+    "nodemon": "^1.18.5",
+    "ts-node": "^7.0.1"
+  }
+}
